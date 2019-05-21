@@ -1,0 +1,43 @@
+ 
+ /* Modal Required Fields  */
+.input-error-msg {
+    display: none;
+    color: #ea7090;
+    font-size: 12px;
+}
+.has-error .input-error-msg {
+    display: block;
+}
+.has-error input {
+    border-color: #ea7090;
+}
+
+.badge.badge-small {
+    font-size: .7em;
+    padding: 
+    .2em .4em;
+}
+
+.card.todo-list {
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+}
+#wrapper #content-wrapper #content.image-content {
+
+    background: url('../img/background.jpg');
+    background-size: cover;
+}
+
+#accordionSidebar {
+    background: #627569; 
+}
+
+.form-control-plaintext.readOnlyInput{
+    outline: none;
+    color: #ea7090;
+}
+.activeStyle
+{
+    background-color:  rgb(241, 230, 71);
+}
