@@ -191,8 +191,6 @@
 
             <!-- Modal footer -->
             <div class="modal-footer">
-              <!-- <button type="button" class="btn btn-danger" data-dismiss="modal"
-                data-bind="click: $root.deleteCategory"><i class="far fa-trash-alt"></i></button> -->
               <button type="button" class="btn btn-primary" data-dismiss="modal"
                 data-bind="click: addCategory, text: actionT">Add</button>
             </div>
@@ -459,28 +457,7 @@
           <div class="container-fluid">
             <div class="row">
               <div class="card todo-list" style="width: 100%">
-                <ul class="list-group" data-bind="foreach: undoneTasks, visible: undoneTasks().length > 0">
-                  <li class="list-group-item d-flex align-items-center justify-content-between">
-                    <div>
-                      <span>
-                        <input type="checkbox" data-bind="value: $data, checked: isDone, click: $root.fromUndoneToDone" />
-                        <label data-bind="text: note"></label>
-                      </span>
-                    </div>
-                    <div>
-                      <span data-bind="text: dueDate"></span>
-                      <button class="btn btn-outline-info btn-sm" data-toggle="modal" data-target="#viewTask"
-                        data-bind="click: $root.showTask.bind($data)"><i class="far fa-eye"></i></button>
-                      <button class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#myModal2"
-                        data-bind="click:$root.editTaskButton"><i class="far fa-edit"></i></button>
-                      <button class="btn btn-outline-warning btn-sm"
-                        data-bind="click: $root.addFavorite, css: {'activeStyle': isFavorite} "><i
-                          class="fas fa-star"></i></button>
-                      <button class="btn btn-outline-danger btn-sm" data-bind="click:$root.deleteTask"><i
-                          class="far fa-trash-alt"></i></button>
-                    </div>
-                  </li>
-                </ul>
+                
                 <!-- Show List of Favorite Tasks -->
                 <ul class="list-group" data-bind="foreach: favorites">
                     <li class="list-group-item d-flex align-items-center justify-content-between">
